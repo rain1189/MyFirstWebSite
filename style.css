@@ -11,14 +11,24 @@ h1 {
 }
 
 ol {
-    font-size: 19px;
-    padding-top: 20px;
-    border-right: 1px solid grey;
-    margin: 0;
+    font-size: 20px;
+    /* padding: 20px; */
 }
 
 a {
     text-decoration: none;
+}
+
+input {
+    font-size: 20px;
+}
+
+#content {
+    border-right: 1px solid grey;
+}
+
+#content div {
+    text-align: center;
 }
 
 #grid {
@@ -40,3 +50,4 @@ a {
         border-bottom: none;
     }
 }
+
