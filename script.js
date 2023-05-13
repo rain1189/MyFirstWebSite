@@ -1,8 +1,8 @@
 function toNight() {
     document.querySelector('body').style.backgroundColor="black";
     document.querySelector('body').style.color="lightgrey";
-    as = document.querySelectorAll('a');
-    as.forEach(function(a) {
+    ats = document.querySelectorAll('a');
+    ats.forEach(function(a) {
         a.style.color="lightblue"
     })
 }
@@ -10,8 +10,8 @@ function toNight() {
 function toDay() {
     document.querySelector('body').style.backgroundColor=null;
     document.querySelector('body').style.color=null;
-    as = document.querySelectorAll('a');
-    as.forEach(function(a) {
+    ats = document.querySelectorAll('a');
+    ats.forEach(function(a) {
         a.style.color=null
     })
 }

@@ -1,24 +1,12 @@
-h1 {
+#title-box {
+    border-bottom: 1px solid grey;
+}
+
+#title {
     font-size: 50px;
     text-align: center;
     padding-top: 40px;
     margin: 0;
-}
-
-ol {
-    font-size: 20px;
-}
-
-a {
-    text-decoration: none;
-}
-
-input {
-    font-size: 20px;
-}
-
-#title {
-    border-bottom: 1px solid grey;
 }
 
 #theme {
@@ -26,13 +14,25 @@ input {
     padding-bottom: 10px;
 }
 
-#content {
-    border-right: 1px solid grey;
+#theme > input {
+    font-size: 20px;
 }
 
 #grid {
     display: grid;
     grid-template-columns: 400px 1fr;
+}
+
+#content {
+    border-right: 1px solid grey;
+}
+
+#content > ol {
+    font-size: 20px;
+}
+
+#content > ol > li > a {
+    text-decoration: none;
 }
 
 #article {
@@ -45,7 +45,7 @@ input {
         display: block;
     }
 
-    #title {
+    #title-box {
         border-bottom: none;
     }
 }
