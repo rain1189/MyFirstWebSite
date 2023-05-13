@@ -24,12 +24,14 @@ function toLight() {
 
 // function getCookies() {
 //     const cookieString = document.cookie;
-//     const cookieList = cookieString.split(';');
-//     const cookies = {};
+//     const cookieArray = cookieString.split(';');
+//     const cookieDict = {};
 
-//     for (let i = 0; i += 1; i < cookieList.length) {
-//         let name = cookieList[0].split('=')[0];
-//         let value = cookieList[0].split('=')[1];
-//         cookies[name] = value;
+//     for (let i = 0; i < cookieArray.length; i++) {
+//         let name = cookieArray[i].split('=')[0];
+//         let value = cookieArray[i].split('=')[1];
+//         cookieDict[name] = value;
 //     }
+
+//     return cookieDict;
 // }
