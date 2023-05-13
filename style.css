@@ -1,18 +1,12 @@
-body {
-    margin: 0;
-}
-
 h1 {
     font-size: 50px;
     text-align: center;
-    padding: 40px;
-    border-bottom: 1px solid grey;
+    padding-top: 40px;
     margin: 0;
 }
 
 ol {
     font-size: 20px;
-    /* padding: 20px; */
 }
 
 a {
@@ -23,12 +17,17 @@ input {
     font-size: 20px;
 }
 
-#content {
-    border-right: 1px solid grey;
+#title {
+    border-bottom: 1px solid grey;
 }
 
-#content div {
-    text-align: center;
+#theme {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+#content {
+    border-right: 1px solid grey;
 }
 
 #grid {
@@ -46,7 +45,7 @@ input {
         display: block;
     }
 
-    h1 {
+    #title {
         border-bottom: none;
     }
 }

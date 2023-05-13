@@ -7,18 +7,20 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>박래인<img src="selfie.jpg" height="100">이 잘생긴 이유</h1>
+    <div id="title">
+        <h1>박래인<img src="selfie.jpg" height="100">이 잘생긴 이유</h1>
+        <div id="theme">
+            <input type="button" value="Night" onclick="toNight()">
+            <input type="button" value="Day" onclick="toDay()">         
+        </div>
+    </div>
     <div id="grid">
         <div id="content">
             <ol>
                 <li><a href="1.html">피부가 좋다</a></li>
                 <li><a href="2.html">비율이 좋다</a></li>
                 <li><a href="3.html">모든 사람들이 잘생겼다고 생각한다.</a></li>
-            </ol>   
-            <div>
-                <input type="button" value="Night" onclick="toNight()">
-                <input type="button" value="Day" onclick="toDay()">            
-            </div>
+            </ol>
         </div>
         <div id="article">  
             <h2>1. 피부가 좋다</h2>
