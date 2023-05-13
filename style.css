@@ -3,7 +3,7 @@
 }
 
 #title {
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     padding-top: 40px;
     margin: 0;
@@ -41,12 +41,16 @@
 }
 
 @media(max-width:800px) {
+    #title-box {
+        border-bottom: none;
+    }
+
     #grid {
         display: block;
     }
 
-    #title-box {
-        border-bottom: none;
+    #title {
+        font-size: 50px;
     }
 }
 
