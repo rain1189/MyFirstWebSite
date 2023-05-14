@@ -15,6 +15,11 @@
     margin-bottom: 10px;
 }
 
+#date {
+    display: inline;
+    float: right;
+}
+
 #grid {
     display: grid;
     grid-template-columns: 400px 1fr;
