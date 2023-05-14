@@ -1,25 +1,30 @@
-if (document.cookie.includes('dark')) {
-    toDark()
+const body = document.querySelector('body');
+const togle = document.querySelector('#togle');
+
+if (document.cookie.includes("dark")) {
+    toDark();
+}
+
+function themeChange() {
+    if (togle.value === "dark") {
+        toDark();
+    } else {
+        toLight();
+    }
 }
 
 function toDark() {
-    document.querySelector('body').style.backgroundColor="black";
-    document.querySelector('body').style.color="lightgrey";
-    ats = document.querySelectorAll('a');
-    ats.forEach(function(a) {
-        a.style.color="lightblue"
-    })
-    document.cookie = "theme=dark"
+    body.style.backgroundColor="black";
+    body.style.color="lightgrey";
+    togle.value="light";
+    document.cookie="theme=dark";   
 }
 
 function toLight() {
-    document.querySelector('body').style.backgroundColor=null;
-    document.querySelector('body').style.color=null;
-    ats = document.querySelectorAll('a');
-    ats.forEach(function(a) {
-        a.style.color=null
-    })
-    document.cookie = "theme=light"
+    body.style.backgroundColor=null;
+    body.style.color=null;
+    togle.value="dark";    
+    document.cookie="theme=light";
 }
 
 // function getCookies() {

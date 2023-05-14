@@ -9,13 +9,10 @@
     margin: 0;
 }
 
-#theme {
-    padding-left: 20px;
-    padding-bottom: 10px;
-}
-
-#theme > input {
+#togle {
     font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 #grid {
@@ -32,6 +29,7 @@
 }
 
 #content > ol > li > a {
+    color: royalblue;
     text-decoration: none;
 }
 
