@@ -36,21 +36,20 @@ function toLight() {
 }
 
 function handleImageClick() {
-    let enlargeCount = 1;
     image.height *= 2;
-    const enlargeImage = setInterval(() => {
-        image.height *= 2;
-        enlargeCount++;
-        if (enlargeCount === 6) {
-            clearInterval(enlargeImage);
-            let reduceCount = 0;
-            const reduceImage = setInterval(() => {
-                image.height /= 2;
-                reduceCount++;
-                if (reduceCount === 6) {
-                    clearInterval(reduceImage);
-                }
-            }, 1000);
+    let changeSizeCount = 1;
+    const changeImageSize = setInterval(() => {
+        if (changeSizeCount === 5) {
+            image.height /= 2;
+            changeSizeCount = 10;
+        } else if (changeSizeCount === 6) {
+            clearInterval(changeImageSize);
+        } else if (changeSizeCount < 5) {
+            image.height *= 2;
+            changeSizeCount++;
+        } else {
+            image.height /= 2;
+            changeSizeCount--;
         }
     }, 1000);
 }
